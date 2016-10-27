@@ -6,6 +6,8 @@ document.getElementById("create").onclick = function() {
 };
 
 function createStartup() {
+    document.getElementById("alreadyFavorite").innerHTML = "";
+
     var startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
     var startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
 
@@ -30,7 +32,6 @@ document.getElementById("save").onclick = function() {
 };
 
 function saveStartup() {
-    document.getElementById("alreadyFavorite").innerHTML = "";
     checkStartup();
 };
 

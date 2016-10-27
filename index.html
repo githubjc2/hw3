@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+  <title>Mad Lib</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Your description goes here">
+  <meta name="keywords" content="one, two, three">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body style="height: 100%; padding: 24px; background-image: url(img/school-desk.jpg); background-size: cover; background-repeat: no-repeat; background-color: transparent;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-4 text-center">
+        <div style="box-shadow: -4px 4px 32px #333; min-height: 480px; background-color: white; -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg);">
+          <img src="img/mad-libs.png" alt="Mad Libs | Wacky Startups" class="img-responsive" style="margin-bottom: 18px;">
+
+          <div style="padding: 0 24px 24px;">
+            <div id="inputs">
+              <button class="btn btn-primary btn-sm" id="create">Create New Startup</button>
+              <button class="btn btn-primary btn-sm" id="save">Save as Favorite</button>
+              <button class="btn btn-primary btn-sm" id="print">Print Favorites</button>
+            </div>
+            <h1 id="xForY"></h1>
+            <h3 id="alreadyFavorite" style="color: red;"></h3>
+            <h2 id="favorites"></h2>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/madlib-console.js"></script>
+
+</body>
+
+</html>
